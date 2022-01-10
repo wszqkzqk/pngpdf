@@ -22,3 +22,7 @@ pdf压缩工具依赖`Ghostscript`
 - `i.pdf`的输出文件为`i-pic.pdf`
 2. 对于pdf压缩
 - `i.pdf`的输出文件为`i-compressed.pdf`
+
+### 注意
+
+压缩方式为有损压缩，请勿多次使用
