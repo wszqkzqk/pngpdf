@@ -1,9 +1,11 @@
 #!/usr/bin/bash
 cd `dirname $0`; pwd
 for i in *.pdf ; do
-    if [[ $i != *-pic* ]] ; then    #判断是否是已转换文件，防止再次在同一文件夹中执行时重复转换
+    if [[ $i != *-pic* ]] ; then
+        echo "正在转化文件：$i"
         pdftoppm -png $i ${i:0:-4}
-        convert ${i:0:-4}*.png +compress ${i:0:-4}-pic.pdf
+        convert ${i:0:-4}*.png ${i:0:-4}-pic.pdf
         rm ${i:0:-4}*.png
+        echo "已输出至：${i:0:-4}-pic.pdf"
     fi
 done
