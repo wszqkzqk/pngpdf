@@ -22,6 +22,8 @@ pdf压缩工具依赖`Ghostscript`
 - `i.pdf`的输出文件为`i-pic.pdf`
 2. 对于pdf压缩
 - `i.pdf`的输出文件为`i-compressed.pdf`
+3. 对于有`-replace`后缀的脚本
+- 进行相应操作并覆盖源文件
 
 ### 注意
 
