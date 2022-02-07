@@ -3,6 +3,7 @@ cd `dirname $0`; pwd
 
 # 指定仓库地址(注意：对于gitee仓库应当用小写字母)
 repoinfo="wszqkzqk/pngpdf.git"
+mirrorrepoinfo="${repoinfo}"
 
 # 添加更改
 echo "正在添加变更文件……"
@@ -24,7 +25,7 @@ done
 
 # 如果不存在镜像仓库，进行添加
 if [[ ${flag} == 1 ]];then
-    git remote add mirror git@gitee.com:${repoinfo}
+    git remote add mirror git@gitee.com:${mirrorrepoinfo}
 fi
 
 # 进行推送
