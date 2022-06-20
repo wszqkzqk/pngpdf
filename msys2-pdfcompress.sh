@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 cd `dirname $0`; pwd
 for i in *.pdf ; do
     if [[ $i != *-compressed* ]] ; then    #判断是否是已转换文件，防止再次在同一文件夹中执行时重复转换
